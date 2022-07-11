@@ -50,20 +50,21 @@ int result = SumNechetIndex(a);
 Console.WriteLine("");
 Console.WriteLine("Сумма элементов, стоящих на нечётных позициях  = " + result);
 */
-/* Zadacha 38 */
-double Raznicha(double N)
+/* Zadacha 38 
+float Raznicha(int N)
 {
-   double[] array = new double[N];
+   float[] array;
+   array = new float[N];
     Random rand = new Random();
-    double razn = 0;
+    float razn = 0;
     Console.WriteLine("Массив чисел: ");
     for (int i = 0; i<array.Length; i++)
     {
-        array[i] = rand.Next(10000);
+        array[i] = rand.Next(1,10000);
         Console.Write(" " + array[i]); 
     }   
-    double min = 100000;
-    double max = 0;
+    float min = 100000;
+    float max = 0;
      for (int i = 0; i<array.Length; i++)
      {
         if (array[i] > max)
@@ -80,7 +81,8 @@ double Raznicha(double N)
      return razn;
 }
 Console.Write("Введите количество элементов массива ");
-double a = Convert.ToDouble(Console.ReadLine());
+int a = Convert.ToInt32(Console.ReadLine());
 double result = Raznicha(a);
 Console.WriteLine("");
 Console.WriteLine("Разница между максимумом и минимумом  = " + result);
+*/
